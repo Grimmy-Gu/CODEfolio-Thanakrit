@@ -1,0 +1,113 @@
+:root{
+    --blue: #2c5f8a;
+    --text: #26323f;
+    --paper: ghostwhite;
+}
+
+body {
+    font-family: "Noto Sans Thai", sans-serif;
+    color: var(--text);
+    background: rgb(98, 201, 219);
+    line-height: 1.7;
+}
+
+.profile {
+    background: #ffffff;
+    border-bottom: 4px solid rgb(72, 38, 24);
+    padding: 3rem 0;
+}
+
+.profile-photo {
+    width: 100%;
+    max-width: 260px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid lime;
+    border-color: aqua;
+    box-shadow: 3px 3px 10px 2px gray;
+    background: #fff;
+}
+
+.profile-name {
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.profile-sub {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.profile-info {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: .25rem 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.profile-info dd {
+    color: darkred;
+}
+
+.filter-bar {
+    position: sticky;
+    top 0;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin-bottom: 1.5rem;
+    padding: .75rem 0;
+    background: #92d4e8;
+    border-bottom: 1px solid white;
+}
+
+.filter-bar label {
+    padding:  .4rem 1.25rem;
+    border: 1px solid #fff;
+    border-radius: 999px;
+    background: rgb(255, 255, 255);
+    color: #26323f;
+    font-weight: 500;
+    cursor: pointer;
+    transition: backgound .15s,color .15s, border-color .15s;
+    
+    
+}
+
+.filter-bar label:hover {
+    border-color: rgb(0, 0, 0);
+}
+
+#cat-all:checked ~ .filter-bar label[for="cat-all"],
+#cat-media:checked ~ .filter-bar label[for="cat-media"],
+#cat-editing:checked ~ .filter-bar label[for="cat-editing"] {
+    background: pink;
+    border-color: #92d4e8;
+    color: #ffffff;
+}
+
+
+#cat-all:focus-visible ~ .filter-bar label[for="cat-all"],
+#cat-media:focus-visible ~ .filter-bar label[for="cat-media"],
+#cat-editing:focus-visible ~ .filter-bar label[for="cat-editing"] {
+    outline: 3px solid #2c5f8a;
+    outline-offset: 2px;
+}
+
+#cat-media:checked ~ .work-list .work:not([data-catogory="Media"])
+#cat-editing:checked ~ .work-list .work:not([data-catogory="Editing"]) {
+    display: none;
+}
+    
+    
+    
+.work-media {
+    width: 100%;
+    max-width: 260px;
+    object-fit: cover;
+    
+}

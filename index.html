@@ -1,64 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CODEfolio | GUTS</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CODEfolio | THANAKRIT SARAPHON</title>
+  <meta name="description" content="พอร์ตโฟลิโอของ ธนกฤต สาระพล นักเรียนชั้น ม.6 โรงเรียนวิสุทธิกษัตรี สนใจศึกษาต่อด้านคอมพิวเตอร์ ตัดต่อ กราฟิก และงานด้านสื่อดิจิทัล">
+  <meta name="theme-color" content="#1b2a41">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌹%3C/text%3E%3C/svg%3E">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <header class="profile">
         <div class="container">
             <div class="row align-items-center g-4">
                 <div class="col-md-4 text-center">
-                    <img src="9rdqvjtw1g1g1.jpeg" alt="รูปโปรไฟล์" class="profile-photo">
+                    <img src="Profile.jpg" alt="รูปโปรไฟล์" class="profile-photo">
                 </div>
                 <div class="col-md-8">
-                    <h1 class="profile-name">Eren yeager</h1>
+                    <h1 class="profile-name">ธนกฤต สาระพล</h1>
                     <p class="profile-sub">นักเรียนชั้นมัธยมศึกษาปีที่ 6</p>
                     <dl class="profile-info">
                         <dt>โรงเรียน</dt><dd>โรงเรียนวิสุทธิกษัตรี</dd>
+                        <dt>อายุ</dt><dd>17 ปี</dd>
+                        <dt>สนใจศึกษาต่อ</dt><dd>คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี สาขาวิทยาการคอมพิวเตอร์ประยุกต์-มัลติมีเดีย</dd>
                     </dl>
-                    <p class="profile-about">To you, 2,000 years From now.</p>
+                    <p class="profile-about">ผมชื่อ"กัส"เป็นเด็กคนนึงที่ชื่นชอบในการตัดต่อ และสนใจเกี่ยวกับด้านคอมพิวเตอร์ เพราะฉะนั้นที่นี่จะเป็นที่ผลักดันให้เด็กคนนึงที่มีเป้าหมายในอนาคต จึงเป็นเหตุผล เป็นต้น</p>
                 </div>
             </div>
         </div>
     </header>
 
     <main>
-        <search class="container works" id="works">
+        <section class="container about" id="about">
+            <h2 class="section-title">เกี่ยวกับผลงาน</h2>
+            <p class="section-desc">ผลงานที่แสดงในนี้เป็นเพียงส่วนหนึ่งของผลงานทั้งหมดที่ผมเคยทำมา ซึ่งผมได้เลือกผลงานที่ดีที่สุดและน่าสนใจที่สุดมาแสดงให้ทุกคนได้ชมกัน by THANAKRIT
+            </p> 
+        </section>  
+        <section class="container works" id="works">
             <input type="radio" name="cat" id="cat-all" class="visually-hidden" checked>
             <input type="radio" name="cat" id="cat-media" class="visually-hidden" >
             <input type="radio" name="cat" id="cat-editing" class="visually-hidden" >
+            <input type="radio" name="cat" id="cat-general" class="visually-hidden" >
 
             <div class="filter-bar" role="group" aria-label="เลือกหมวดผลงาน">
                 <label for="cat-all">ทั้งหมด</label>
                 <label for="cat-media">Media</label>
                 <label for="cat-editing">Editing</label>
+                <label for="cat-general"> รางวัลและกิจกรรม</label>
             </div>
             
             <div class="work-list">
-                <article class="work" data-category="Editing">
+                <article class="work" data-category="editing">
                     <div class="row g-4 align-item-center">
-                        <div class="col-lg-7">
+                        <div class="col-lg-5">
                             <img src="Edit1.PNG" alt="" class="work-media">
+                            <img src="edit2.png" alt="" class="work-media">
+                            <img src="edit3.png" alt="" class="work-media">
                         </div>
                         
                         <div class="col-lg-5">
                             <span class="work-tag">Editing</span>
                             <h3 class="work-title">Edit all monster in monhun</h3>
-                            <p class="work-desc">vamos</p>
-                            <a href="Edit1.PNG" class="btn-detail">Click</a>
+                            <p class="work-desc">ผลงานนี่คือการedit ที่นำตัวละครจากเกม monster hunter มาตัดต่อถ่ายทอดออกมาผ่านจังหวะของภาพ เสียง เอฟเฟกต์และดนตรีประกอบ ผมได้ทำสิ่งนี้ทำให้ผมได้รู้การตัดต่อพื้นฐานและสกิลใหม่ๆ เช่น การใช้ key frame, hook ,beat sync และผลงานนี่สามารถดึงดูดผู้ชมบนsocials media จนผลงานที่ยอดรับชมรวม มากกว่า 100,000ครั้ง</p>
+                            <a href="https://www.tiktok.com/@gu_ts_grimmy/collection/edit%20all%20monster%20in%20monhun-7677177618517953298" class="btn-detail">ดูรายละเอียด →</a>
                         </div>
                     </div>
                 </article>
 
             </div>
-        </search>
+
+             <div class="work-list">
+        <article class="work" data-category="media">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-5">
+              <img class="work-media" src="poster.png" alt="ตัวอย่างผลงานที่ 1">
+              <img class="work-media" src="poster (1).png" alt="ตัวอย่างผลงานที่ 2">
+              <img class="work-media" src="poster (2).png" alt="ตัวอย่างผลงานที่ 3">
+            </div>
+            <div class="col-lg-5">
+              <span class="work-tag">Media</span>
+              <h3 class="work-title">Poster Design</h3>
+              <p class="work-desc">ผลงานนี่คือการนำตัวละครจากเกม monster hunter มาทำ poster ใน concept edits all monster in monhun ผมได้ทำในโปรแกรม Canva  ออกแบบให้แต่ละโปรเตอร์มีเอกลักษณ์ที่แตกต่างกันตามมอนเตอร์แต่ละตัว งานนี้ทำให้ผมได้ผึกเรื่อง composition,typography color และ visual identity</p>
+            </div>
+          </div>
+        </article>
+        
+            <div class="work-list">
+                <article class="work" data-category="editing">
+                    <div class="row g-4 align-item-center">
+                        <div class="col-lg-5">
+                            <img src="S__1204237.jpg" alt="" class="work-media">
+                            <img src="S__1204238.jpg" alt="" class="work-media">
+                            <img src="S__1204239.jpg" alt="" class="work-media">
+                        </div>
+                        
+                        <div class="col-lg-5">
+                            <span class="work-tag">Editing</span>
+                            <h3 class="work-title">ศิลป์คือทาง?</h3>
+                            <p class="work-desc">ผลงานหนังสั้นเรื่อง “ศิลป์คือทาง” เป็นผลงานที่ได้ร่วมทำกับเพื่อน โดยผมมีหน้าที่หลักเป็น 
+นักแสดงและตัดต่อ  ผมรับผิดชอบการเลือกและเรียงลำดับภาพ ปรับจังหวะ รวมถึงจัดการเสียงและองค์ประกอบต่างๆ ในส่วนของการแสดง ผมได้ฝึกการถ่ายทอดอารมณ์และความรู้สึกของตัวละครให้เหมาะสมกับแต่ละฉาก</p>
+                            <a href="https://drive.google.com/file/d/1hArC_fiDUBNgpgnbKEOxPFl5SF-iUbTE/view" class="btn-detail">รับชมเต็มเรื่อง →</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+            <div class="work-list">
+        <article class="work" data-category="general">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-5">
+              <img class="work-media" src="IMG_0298.JPG" alt="ตัวอย่างผลงานที่ 1">
+              <img class="work-media" src="IMG_0157.JPG" alt="ตัวอย่างผลงานที่ 2">
+              <img class="work-media" src="IMG_0159.JPG" alt="ตัวอย่างผลงานที่ 3">
+            </div>
+            <div class="col-lg-5">
+              <span class="work-tag">รางวัลและกิจกรรม</span>
+              <h3 class="work-title">"ตัวแทน"นำเสนอผลงาน IS </h3>
+              <p class="work-desc">ได้รับหน้าที่เป็น ตัวแทน ในการนำเสนอผลงานโครงงานและนวัตกรรม เรื่อง smart pad dispenser เพื่อสุขอนามัยของนักเรียนหญิง ส่วนนี่ผมได้เรียนรู้ว่าเรื่องนี้ไม่ได้ไกลตัวและช่วยให้เข้าใจในปัญหาของนักเรียนหญิง และผมยังฝึกการนำเสนอต่อหน้าผู้คนมากมาย</p>
+            </div>
+          </div>
+        </article>
+        
+            </div>
+            <div class="work-list">
+        <article class="work" data-category="general">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-5">
+              <img class="work-media" src="dek1 68.jpg" alt="ตัวอย่างผลงานที่ 1">
+              <img class="work-media" src="dek2 68.jpg" alt="ตัวอย่างผลงานที่ 2">
+            </div>
+            <div class="col-lg-5">
+              <span class="work-tag">รางวัลและกิจกรรม</span>
+              <h3 class="work-title">"เกียรติบัตรเด็กดี ศรีวิสุทธิ์ ประจำปีการศึกษา 2567 </h3>
+              <p class="work-desc">ได้รับเกียรติบัตรเชิดชูเกียรติในนามเด็กดี ศรีวิสุทธิ์ เพื่อเป็นรางวัลและหลักฐานว่ามีความประพฤติดีมีวินัย 
+จึงได้รับเกียรบัตรประเภทต่างๆดังนี้ 
+- ประเภท ผู้นำนักเรียนดีเยี่ยม
+- ประเภท ผู้มีความประพฤติดี มีวินัยดีเยี่ยม</p>
+            </div>
+          </div>
+        </article>
+        
+            </div>
+
+            <div class="work-list">
+        <article class="work" data-category="general">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-5">
+              <img class="work-media" src="dek1 69.jpg" alt="ตัวอย่างผลงานที่ 1">
+              <img class="work-media" src="dek2 69.jpg" alt="ตัวอย่างผลงานที่ 2">
+              <img class="work-media" src="dek3 69.jpg" alt="ตัวอย่างผลงานที่ 3">
+            </div>
+            <div class="col-lg-5">
+              <span class="work-tag">รางวัลและกิจกรรม</span>
+              <h3 class="work-title">"เกียรติบัตรเด็กดี ศรีวิสุทธิ์ ประจำปีการศึกษา 2568 </h3>
+              <p class="work-desc">ได้รับเกียรติบัตรเชิดชูเกียรติในนามเด็กดี ศรีวิสุทธิ์ เพื่อเป็นรางวัลและหลักฐานว่ามีความประพฤติดีมีวินัย 
+จึงได้รับเกียรบัตรประเภทต่างๆดังนี้  
+- ประเภท ผู้นำนักเรียนดีเยี่ยม 
+- ประเภท จิตอาสาบำเพ็ญประโยชน์ดีเยี่ยม
+- ประเภท มีคุณธรรมและความซื่อสัตย์ดีเยี่ยม</p>
+            </div>
+          </div>
+        </article>
+        
+            </div>
+
+        </section>
+
+        <footer class="site-footer">
+    <div class="container">ติดต่อ: thanakritkusjung@gmail.com</div>
+  </footer>
         
     </main>
 </body>
